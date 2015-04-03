@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>NodeGitTest</title>
+</head>
+<body ng-app="nodeGitTest" ng-controller="MainCtrl">
+	<div>
+		<label>Project Name: </label><input type="text" ng-model="name">
+		<label>GitHub Url: </label><input type="text" ng-model="url">
+		<button ng-click="clone()">Clone</button>
+	</div>
+	<hr>
+	<div>
+		<textarea ng-model="text"></textarea>
+		<button ng-click="commit()">Commit</button>
+	</div>
+	<hr>
+	<div>
+		<button ng-click="pull()">Pull</button>
+		<button ng-click="push()">Push</button>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="gitService.js"></script>
+</body>
+</html>
